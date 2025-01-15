@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .container:hover {
+        cursor: pointer;
+      }
+      .img-cut {
+        margin: 20px auto;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <div class="container"><img class="original" src="./picture.png" /></div>
+    <div class="img-cut"></div>
+    <script>
+        const original = document.querySelector(".original");
+        const imgCut = document.querySelector(".img-cut");
+
+        const createImageRow = (num, translateY = 0) => {
+            const row = document.createElement("div");
+            row.style.display = "flex";
+            row.style.gap = "10px";
+
+            const width = original.clientWidth / num;
+            const height = original.clientHeight / 2;
+
+            for (let index = 0; index < num; index++) {
+                const div = document.createElement("div");
+                div.style.width = `${width}px`;
+                div.style.height = `${height}px`;
+                div.style.overflow = "hidden";
+
+                const img = document.createElement("img");
+                img.src = "./picture.png";
+                img.style.transform = `translateX(${-index * width}px) translateY(${translateY}px)`;
+
+                div.appendChild(img);
+                row.appendChild(div);
+            }
+            return row;
+        };
+
+        const divider = (num) => {
+          const quant = Math.floor(num/2);
+            imgCut.innerHTML = ''; 
+            const firstRow = createImageRow(quant);
+            const secondRow = createImageRow(quant, -original.clientHeight / 2); 
+            imgCut.appendChild(firstRow);
+            imgCut.appendChild(secondRow);
+        };
+
+        original.addEventListener("click", () => divider(10));
+    </script>
+  </body>
+</html>
