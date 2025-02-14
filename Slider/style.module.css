@@ -1,0 +1,208 @@
+.slider-wrapper {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+.slider-wrapper-wide {
+    display: block !important;
+    width: 100%;
+}
+
+.slider-controls {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.slider-controls-not-wide {
+    margin: 10px 20px;
+}
+
+.progress-wrapper {
+    width: fit-content;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.progress {
+    width: 40px;
+    height: 2px;
+    background-color: var(--Text-Black-100-color);
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.progress-line {
+    height: 100%;
+    background-color: var(--Brand-Primary-1000-color);
+}
+
+.btns-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+    margin-left: auto;
+}
+
+.slider-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--Brand-Primary-1000-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-button {
+    border: 2px solid var(--Brand-Primary-1000-color);
+    border-radius: 4px;
+    padding: 6px 8px;
+    transition: all 0.2s;
+}
+
+.active-button svg path {
+    fill: var(--Brand-Primary-1000-color);
+    stroke: var(--Brand-Primary-1000-color);
+}
+
+.slider-button-next {
+    transform: rotate(180deg);
+    min-height: 36px;
+    min-width: fit-content;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-button-prev {
+    min-height: 36px;
+    min-width: fit-content;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-button-prev:active svg path {
+    fill: var(--Brand-Primary-1000-color);
+    stroke: var(--Brand-Primary-1000-color);
+}
+
+.slider-button-prev:active {
+    border: 2px solid var(--Brand-Primary-1000-color);
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.slider-button-next:active svg path {
+    fill: var(--Brand-Primary-1000-color);
+    stroke: var(--Brand-Primary-1000-color);
+}
+
+.slider-button-next:active {
+    border: 2px solid var(--Brand-Primary-1000-color);
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.Gallery {
+    width: 100vw;
+    padding: 0px;
+}
+.Gallery * {
+    max-height: 654px;
+}
+@media(max-width:768px) {
+    .slider-wrapper {
+        display: flex !important;
+        margin: auto;
+        justify-content: center;
+        width: fit-content;
+        min-height: 76px;
+        background: transparent;
+
+    }
+        .slider-dots {
+            margin-right: 0;
+        }
+
+    .slider-wrapper-wide {
+        display: flex !important;
+        margin: auto;
+        justify-content: center;
+        width: fit-content;
+        min-height: 76px;
+        background: transparent;
+
+    }
+    .slider-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: 100%;
+    }
+
+    .btns-wrapper {
+        display: none;
+    }
+}
+
+@media(max-width:380px) {
+    .slider-wrapper {
+        margin: auto;
+        width: fit-content;
+        min-height: 60px;
+    }
+
+    .slider-wrapper-wide {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .slider-controls {
+        width: 105vw;
+        justify-content: center;
+        transform: scale(0.8);
+        margin: auto;
+    }
+
+    .slider-button-next svg path {
+        width: 32px !important;
+    }
+
+    .slider-button-prev svg path {
+        width: 32px !important;
+    }
+}
+
+.embla__container {
+    display: flex;
+
+}
+
+.embla__slide {
+    flex: 0 0 70%;
+    min-width: 0;
+    max-width: 100%;
+}
