@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      div {
+        color: #2299c5;
+      }
+      .container {
+        width: 100%;
+      }
+      .arrow {
+        float: right;
+      }
+      .accordion {
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin: 10px 0;
+        width: 50%;
+      }
+      .accordion-item {
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+      }
+      .accordion-title {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        transition: background-color 0.3s;
+        margin: 5px auto;
+        display: inline-block;
+        width: 92%;
+        min-width: 200px;
+        border-radius: 5px;
+      }
+
+      .accordion-title:hover {
+        background-color: #ddd;
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        padding: 0 10px;
+      }
+      input[type="checkbox"] {
+        display: none;
+      }
+      input[type="checkbox"]:checked + .accordion-title + .accordion-content {
+        max-height: 300px;
+      }
+    </style>
+    <div class="container">
+        <div>Гражданское и патриотическое воспитание</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="civ1">
+        <label class="accordion-title" for="civ1">Шарковщинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.п.Шарковщина, детский сад №5
+<a href="https://docs.google.com/document/d/1-MAUQ32V3rGtX-6diGJ3yGW6Eb0r9Ul4/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Гексы(docx)</a>
+<br/>
+<a href="https://docs.google.com/presentation/d/1RHrlMBvUkBXGy8I1L1LQxJwdYArUA4FN/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Гексы(презентация)</a>
+</p>
+            <p>г.п.Шарковщина, детский сад №1
+<a href="https://docs.google.com/document/d/1EmsOhL5eFoqw96UMuJEsWG40cM48dgpP/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Воспитываем...</a></p>
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="civ2">
+        <label class="accordion-title" for="civ2">Оршанский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Орша, ДЦРР №1
+<a href="https://docs.google.com/document/d/1B0E3K8S4e6VIVXcnTdM05ctr5JlJRLny/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Виртуальный...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1TRFGDHIjBqjh2ZlTm_CE6LdIo8B6o1pz/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Защитники...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1fu9IqfsSqbZ7CFjtdsxB28iEFovO59X0/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Скарбонка...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1WXvzsV7BKNsqT6oYpJOjlyNIWrHkwZMj/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Мемориальный...</a>
+</p>
+<p>г.Орша, Детский сад №3
+<a href="https://docs.google.com/document/d/1_nxpRh7Z98yKrUbzuGFCs3BcW29HXTWe/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Каталог...</a>
+</p>
+</div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="civ3">
+        <label class="accordion-title" for="civ3">Поставский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Поставы Детский сад №2
+<a href="https://docs.google.com/document/d/1YDQYvW5LjEyDa6RecbBY_tmPhgUmQPRf/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Сценарий...</a>
+</p>
+            <p>г.Поставы Детский сад №3
+<a href="https://docs.google.com/presentation/d/1TJAyz6ntETyWKWlbJJ6VZBOSkBQs_j5h/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Проект "Улицы"(презентация)</a>
+<br/>
+<a href="https://docs.google.com/document/d/1COFAxpxHPttCisEP-5xGsxG-QNKlq51a/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Проект "Улицы"(docx)</a>
+</p>
+     
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="civ4">
+        <label class="accordion-title" for="civ4">Толочинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Кохановский детский сад №1
+<a href="https://docs.google.com/document/d/1XeRC68lW-D74ckcmQ0BvuEr691sebOhw/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">День Победы...</a>
+</p>
+<p>г.Толочин детский сад №3
+<a href="https://docs.google.com/document/d/1fWkZ3MI1b2w0G7c-3VjX-OWh8q2cEPrV/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Конспект...</a>
+</p>
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="civ5">
+        <label class="accordion-title" for="civ5">Верхнедвинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Верхнедвинск детский сад №4
+<a href="https://docs.google.com/document/d/1vIiNHofldgSqxD3qhVssJ2HW61CL17uI/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Методические...</a>
+</p>
+            
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="civ6">
+        <label class="accordion-title" for="civ6">Городокский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Городок Детский сад №2
+<a href="https://docs.google.com/document/d/1teWQp-IUk_SonJCXi0JpTzHibv3tUhhh/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Патриотическое воспитание...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1HdkgGv6yh_9lc962kF64aSjj3W45igLG/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивный плакат...</a>
+</p>
+           <p>г.Городок Детский сад №3
+<a href="https://docs.google.com/document/d/1txG48F2ygXYdMeNJw1FzLUlk8J5sgF77/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Мини музей...</a>
+</p>
+            
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="civ7">
+        <label class="accordion-title" for="civ7">Миорский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Миорский район детский сад №2
+<a href="https://docs.google.com/document/d/1jTCFixur1sVe-jE0jPfq9PSXDORBdiZB/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивные игры...</a>
+</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <input type="checkbox" id="civ8">
+        <label class="accordion-title" for="civ8">г. Новополоцк<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г. Новополоцк детский сад №5
+<a href="https://docs.google.com/document/d/1sgnZOvKWJbWoiSDA2o913W0xqmO9hxja/edit?usp=sharing&ouid=102719471219926373429&rtpof=true&sd=true">Конспект...</a>
+</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <input type="checkbox" id="civ9">
+        <label class="accordion-title" for="civ9">Шумилинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+           <p>Обольский детский сад Шумилинского района
+<a href="https://docs.google.com/document/d/16yOm5Z7RYSQz_Nf6lld1Zw8KFlJO8NeE/edit?usp=sharing&ouid=102719471219926373429&rtpof=true&sd=true">Мастер класс...</a>
+        </div>
+    </div>
+</div>
+<div>Воспитание физической культуры</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="sport1">
+        <label class="accordion-title" for="sport1">Витебский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Новкинский дошкольный центр развития ребенка
+<a href="https://docs.google.com/document/d/1DdAA5mypbIV5QiR7SE6iPwEolEZS3cCx/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Материалы творч...(docx)</a>
+<br/>
+<a href="https://docs.google.com/presentation/d/1cGKKbyIeVfjpWeKOzd-y8n0Zbn_ALaa1/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Профессия футболист</a>
+<br/>
+<a href="https://drive.google.com/file/d/1NEHVOCY_QdXK6UhC2M37eqtTE0qnaNVR/view?usp=drive_link">Приобщение детей к спорту (видео)</a>
+</p>
+ </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="sport2">
+        <label class="accordion-title" for="sport2">Оршанский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Орша, детский сад №15
+<a href="https://drive.google.com/drive/folders/1Ds38RLtCoC6cKOQ9SS632-fXdfe3uezU?usp=drive_link">Фото к игровым...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1kP4WQLphCsNMzf0Z26Hvo-piuYlJ31TD/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Игровые упражнения...</a>
+<br/>
+<a href="https://drive.google.com/file/d/17BvvQojwZ1R9b5chVi0cWqodCrQiOVxQ/view?usp=drive_link">Комплект игровых...</a>
+<
+</p>
+
+</div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="sport3">
+        <label class="accordion-title" for="sport3">Поставский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+                        <p>г.Поставы Детский сад №5
+<a href="https://docs.google.com/document/d/1Ef3fJYXzP1KSe94wsUH5uHEIf6iEuXJT/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Буклет</a>
+<br/>
+<a href="https://docs.google.com/presentation/d/1syMQEhlUeqS0JsiLYeILsaji6Kfn29Wq/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">"Городки"(презентация)</a>
+<br/>
+<a href="https://docs.google.com/document/d/1rvTuEdLhWb7tb-vm8fEhaDpsPNOPYJbe/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Мастер-класс</a>
+</p>
+     
+        </div>
+    </div>
+ 
+</div>
+<div>Духовно-нравственное воспитание</div>
+<div class="accordion">
+ <div class="accordion-item">
+        <input type="checkbox" id="spirit1">
+        <label class="accordion-title" for="spirit1">Оршанский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Орша
+<a href="https://docs.google.com/document/d/10bTc6Od4A1uTZDBaCRhbm7j-xdjgOuvA/edit?usp=sharing&ouid=102719471219926373429&rtpof=true&sd=true">Проект духовная обитель</a>
+</p>
+</div>
+    </div>
+</div>
+<div>Эстетическое воспитание</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="buty1">
+        <label class="accordion-title" for="buty1">Шарковщинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.п.Шарковщина, детский сад №3
+<a href="https://docs.google.com/document/d/1yMm1XVJBx_BWpEw9NAEU0DIWKIKYZggL/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Сценарий фольклорного праздника</a>
+</p>
+        </div>
+    </div>
+ 
+</div>
+<div>Семейное и гендерное воспитание</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="fam1">
+        <label class="accordion-title" for="fam1">Глубокский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Детский сад № 6 г. Глубокое
+<a href="https://docs.google.com/document/d/1DOwg_1fz2xRavnAquqCOIo3klHhujlHF/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true>КВЕСТ”ДОРОГОЮ ДОБРА“
+</a>
+</p>
+<p>Детский сад № 5 г. Глубокое
+<a href="https://docs.google.com/document/d/1R1uIOId8AtyfgUjy1Cv4SHrLw3k_1NZz/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">ЗАПРАШАЕМ НА ВЯЧОРКІ</a></p>
+
+<p>Карабоўская сярэдняя школа Глыбоцкага раёна імя Р.І.Мацеюна
+<a href="https://docs.google.com/document/d/11ad_pDpI4Doy3S2D88xiGzD3hXMZnV9V/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Дерево добрых дел</a>
+</p>
+        </div>
+    </div>
+ 
+ 
+ 
+ <div class="accordion-item">
+        <input type="checkbox" id="fam2">
+        <label class="accordion-title" for="fam2">Чашникский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Новолукомль Детский сад №3
+<a href="https://docs.google.com/document/d/16jOQRmoLwQ0X1-C9TfjvOsZrUbVGQpFW/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Конспект Літаратурная вечарынка</a>
+<br/>
+<a href="https://docs.google.com/document/d/1CHMHePJfChbMLRHZ7mFOX_xCMdfPViHi/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Папа может всё...</a>
+</p>
+           
+            
+        </div>
+    </div>
+ 
+    
+</div>
+<div>Трудовое и профессиональное воспитание</div>
+<div class="accordion">
+        <div class="accordion-item">
+            <input type="checkbox" id="labor1">
+            <label class="accordion-title" for="labor1">г.Витебск Первомайский район<span class="arrow">&#9660;</span></label>
+            <div class="accordion-content">
+                <p>г.Витебск, Детский сад №106
+                    <a href="https://docs.google.com/presentation/d/1EwnG2irXFDd5UQ51QBK-hAfITb1f7FlT/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Презентация ранняя профориентация</a>
+                    <br/>
+                    <a href="https://docs.google.com/document/d/1KNcbM2zU0d0fjrWCZkyyuV9oMnnOFBeX/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Презентация ранняя профориентация - текст выступления</a>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="labor2">
+            <label class="accordion-title" for="labor2">Оршанский район<span class="arrow">&#9660;</span></label>
+            <div class="accordion-content">
+                <p>г.Орша, Детский сад №28
+                    <a href="https://docs.google.com/presentation/d/1Uw-T7EGLUcQSL0eloPcTW0Ej38PEB_LV/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Проблемы, поиск, решения (презентация)</a>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="labor3">
+            <label class="accordion-title" for="labor3">г.Новополоцк<span class="arrow">&#9660;</span></label>
+            <div class="accordion-content">
+                <p>г.Новополоцк Учреждение образования
+                    <a href="https://docs.google.com/presentation/d/1fpsdsSGGYV1z5lDYahYMgR7nvBuNX-KR/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивный плакат "В мире профессий"</a>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="labor4">
+            <label class="accordion-title" for="labor4">Витебская область<span class="arrow">&#9660;</span></label>
+            <div class="accordion-content">
+                <p>Профессии в сельском хозяйстве
+                    <a href="https://docs.google.com/document/d/1GXKDOCLZyORL2jLaKDD8Xu_3nObiFOs2/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Видео об агро-профессии</a>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="labor5">
+            <label class="accordion-title" for="labor5">Дубровенский район<span class="arrow">&#9660;</span></label>
+            <div class="accordion-content">
+                <p>г.Дубровно детский сад №2
+                    <a href="https://docs.google.com/presentation/d/1f62oiVwrtYGIwvUB7pJINzSQbYPVvW5e/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Профессии людей в сельском хозяйстве (презентация)</a>
+                    <br/>
+                    <a href="https://docs.google.com/document/d/17iz6dQeuIFUeQlOxsYfcU7Pk8MZPBdk7/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Мастер класс</a>
+                    <br/>
+                    <a href="https://docs.google.com/presentation/d/11u0aYsTsP9zLAson40VwZqnaFZWdV5za/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Играем профессии выбираем (презентация)</a>
+                    <br/>
+                    <a href="https://docs.google.com/presentation/d/1IIKJ5zgQtlni_6ENWgNNic4DKUSijP5n/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивная игра (презентация)</a>
+                    <br/>
+                    <a href="https://docs.google.com/document/d/11pQczFg2ZlWr9uQNKyiz17Hwg-nraSWE/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Примерный конспект занятия по образовательной области «Ребенок и общество»</a>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="labor6">
+            <label class="accordion-title" for="labor6">Чашникский район<span class="arrow">&#9660;</span></label>
+            <div class="accordion-content">
+                <p>Учреждение образования
+                    <a href="https://drive.google.com/drive/folders/10-l0FoxbSThPovYBDj00VJKkFrOtkb25?usp=drive_link">Играем в профессию...(набор мультимедиа информации)</a>
+                </p>
+            </div>
+        </div>
+        </div>
+    <div>Экологическое воспитание</div>
+<div class="accordion">
+    
+ <div class="accordion-item">
+        <input type="checkbox" id="eco1">
+        <label class="accordion-title" for="eco1">Сенненский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Сенно, Детский сад №2
+<a href="https://docs.google.com/presentation/d/1EoOEmQmd472ZHuORMaHEqbRPsHjGb9eb/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивная игра "Разделяйка"</a>
+</p>
+<p>Богушевский детский сад Сенненского района
+<a href="https://docs.google.com/presentation/d/1E22aCcRHksiOLZJHB5gTfMeL1NrPVwgP/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивная игра "Овощи фрукты ягоды"</a>
+<br/>
+<a href="https://docs.google.com/document/d/1qtfgkdMByhM0JN8LRxOluQRkhymWM7Zz/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Экологическая прогулка для старшего дошкольного возраста
+«В гостях у феи Природы»
+</a>
+</p>
+<p>Детский сад №3 г.Сенно
+<a href="https://docs.google.com/presentation/d/1NIdsk7RhB6It_rzvTRhnD54p6Ked8z-T/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивная игра "Подбери экологический знак" (презентация)</a>
+<br/>
+<a href="https://docs.google.com/document/d/1pqSy4dbCs3gTsGXe8RZSRDop5pqJDocO/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивная игра "Подбери экологический знак" (конспект)</a>
+</p>
+<p>Детский сад №1 г.Сенно
+<a href="https://docs.google.com/document/d/1KQnUeUP7YMQ9ja8U4H9AXut5o7xlXimW/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Конспект занятия «Путешествие в гости к Уютику»</a>
+<br/>
+<a href="https://docs.google.com/document/d/1jxeQ082U-qn3FUth-b4DEYoWqQLIsmzt/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Родительское собрание «Сбережем все вместе электричество и сохраним природу».
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1lmFUlNJwiS9fShuYNYXbTjdUk87dJnU-/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Тематическая неделя «В гостях у Сохраняйки»
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1yRQgYuyMGn03ZdXeyrRTRzjkU4vHWQ7c/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Экологическая прогулка 
+«Поможем Муравьишке в дом свой попасть»
+</a>
+</p>
+<p>ГУО ”Яновская базовая школа им.Н.Л.Цурана Сенненского района“
+(структурное подразделение ”ясли-сад“)
+<a href="https://drive.google.com/drive/folders/1EE-rb7i_6Su4WMMyLYo_g7QqgTt-UOf3?usp=drive_link">Квест игра "Сохраним планету" (сборник медиафайлов)</a>
+</p>
+</div>
+    </div>
+    
+    <div class="accordion-item">
+        <input type="checkbox" id="eco2">
+        <label class="accordion-title" for="eco2">Шумилинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+           <p>Обольский детский сад Шумилинского района
+<a href="https://docs.google.com/document/d/1r-vDza25d_j4fxcTmzZ-HTVE28lgM3_S/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Дидактическая игра «Гном и его энергодом»
+</a>
+</p>
+        </div>
+    </div>
+</div>
+<div>Воспитание культуры безопасности жизнедеятельности</div>
+<div class="accordion">
+ <div class="accordion-item">
+        <input type="checkbox" id="cul1">
+        <label class="accordion-title" for="cul1">Оршанский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Детский сад №46 г. Орши
+<a href="https://docs.google.com/document/d/1orWhUYHeeKrkKi5gDhYpVznMMmhsHek3/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">ПАСПОРТ
+дидактической интерактивной игры «Изучаем правила безопасности с роботом MATATALAB»
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1A0_FmEPLPMsB1ohoqkSck2HQsgxD_lDI/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">ПАСПОРТ
+дидактической игры «Куб безопасности»
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1LGK_M60knXBmYLIkPS1jT_U9Ntb6VseQ/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">ПАСПОРТ
+дидактической игры- лототрона «Наша безопасность»
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1E3otUWIf6PKT9bZMThnDVenWxNXZ4xtU/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Конспект развлечения
+по правилам дорожного движения в средней группе «Путешествие Незнайки в страну дорожных знаков».
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1FZig2JWUCRP6AfMzFKKeQTGqolUGOMXG/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Сценарий спортивного праздника
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1pvoVVhyO6nTXfa6UcUJsPBQkN5CM38-h/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Тренинг по ПДД
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1pvoVVhyO6nTXfa6UcUJsPBQkN5CM38-h/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Тренинг по ПДД
+</a>
+</p>
+<p>Ясли-сад №46 г. Орши
+<a href="https://docs.google.com/document/d/1x7_cYPn1p3qo16lDOv9WTqXGg1SsOuvs/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Электронный ресурс «Дидактические игры по безопасности жизнедеятельности»
+</a>
+</p>
+</div>
+    </div>
+
+ <div class="accordion-item">
+        <input type="checkbox" id="cul2">
+        <label class="accordion-title" for="cul2">Толочинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>ГУО Славенский детский сад
+<a href="https://docs.google.com/presentation/d/1WeNR5UbS5YEbyiM4lhb38tL3eEaTVUlh/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Обучающий видеоролик 
+«Крош о  безопасности (презентация)»
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/11RN9fM2qLzL7aJ_dcestwbVs6qRun4TI/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Обучающий видеоролик 
+«Крош о  безопасности»
+</a>
+</p>
+<p>г.Толочин детский сад №1
+<a href="https://docs.google.com/document/d/1Q74U1JIJjtW_IdBAjcZJ9_lVxCqAt_-Z/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">“Как Алёнушка братца Иванушку выручала”</a>
+</p>
+        </div>
+    </div>
+ 
+ <div class="accordion-item">
+        <input type="checkbox" id="cul3">
+        <label class="accordion-title" for="cul3">Чашникский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Новолукомль детский сад №3
+<a href="https://drive.google.com/drive/folders/1PdQS13hZqZ7B2b6acUiTmi4SMedxs1CD?usp=drive_link">Игра по безопасности (сборник медиафайлов)</a>
+</p>
+        </div>
+    </div>
+   
+    <div class="accordion-item">
+        <input type="checkbox" id="cul4">
+        <label class="accordion-title" for="cul4">Шумилинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+           <p>Обольский детский сад Шумилинского района
+<a href="https://docs.google.com/document/d/1v6j7FzxbIT1LN1citdnWTkWLEMdnYHVd/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">ДИДАКТИЧЕСКАЯ ИГРА
+«С Ясем и Василинкой играем,правила безопасности изучаем» (восп. Брикман)
+</a>
+<br/>
+<a href="https://docs.google.com/document/d/1oTJ83dWdINaYv9Mn90aN5Ij8l1sBc_Is/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">ДИДАКТИЧЕСКАЯ ИГРА
+«С Ясем и Василинкой играем,правила безопасности изучаем» (восп. Лукьянова)
+</a>
+<br/>
+<a href="https://docs.google.com/presentation/d/1prjW1IMI0EN1bmwOCaM8UWKDqf7z0nxw/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивная игра ПДД(презентация)
+</a>
+<br/>
+<a href="https://drive.google.com/drive/folders/1ZZbAcw8UX8NPoPiXO8c2zSpz_mF0_DQQ?usp=drive_link">Буклеты для родителей»(сборник файлов)
+</a>
+</p>
+        </div>
+    </div>
+</div>
+<div>Экономическое воспитание</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="econ1">
+        <label class="accordion-title" for="econ1">Россонский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Детский сад №1 г.п. Россоны
+<a href="https://docs.google.com/document/d/1HIsmWzccLkpOxwpDSAT6n0_rZsMxGm7V/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">«Формирование основ экономической культуры у детей дошкольного возраста в условиях учреждения дошкольного образования и семьи»</a>
+</p>
+        </div>
+    </div>
+ 
+
+ <div class="accordion-item">
+        <input type="checkbox" id="econ2">
+        <label class="accordion-title" for="econ2">Чашникский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Детский сад №1г.Чашники
+<a href="https://docs.google.com/presentation/d/1B-zsNqJ9jfjE-Sbdebg5nEr08Bt659x7/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Юный финансист (презентация)</a>
+<br/>
+<a href="https://drive.google.com/drive/folders/1mZBoyO0KQRNjUpIrRmGALk-QcQo2K8pO?usp=drive_link">Игра по финансовой грамотности (сборник медиафайлов)</a>
+</p>
+<p>Детский сад №3 г.Новолукомль
+<a href="https://drive.google.com/drive/folders/1mZBoyO0KQRNjUpIrRmGALk-QcQo2K8pO?usp=drive_link">Игра по финансовой грамотности (сборник медиафайлов)</a>
+</p>
+        </div>
+    </div>
+</div>
+<div>Поликультурное воспитание</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="poly1">
+        <label class="accordion-title" for="poly1">Шарковщинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.п.Шарковщина, детский сад №5
+<a href="https://docs.google.com/document/d/1-MAUQ32V3rGtX-6diGJ3yGW6Eb0r9Ul4/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Гексы(docx)</a>
+<br/>
+<a href="https://docs.google.com/presentation/d/1RHrlMBvUkBXGy8I1L1LQxJwdYArUA4FN/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Гексы(презентация)</a>
+</p>
+            <p>г.п.Шарковщина, детский сад №1
+<a href="https://docs.google.com/document/d/1EmsOhL5eFoqw96UMuJEsWG40cM48dgpP/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Воспитываем...</a></p>
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="poly2">
+        <label class="accordion-title" for="poly2">Оршанский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Орша, ДЦРР №1
+<a href="https://docs.google.com/document/d/1B0E3K8S4e6VIVXcnTdM05ctr5JlJRLny/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Виртуальный...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1TRFGDHIjBqjh2ZlTm_CE6LdIo8B6o1pz/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Защитники...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1fu9IqfsSqbZ7CFjtdsxB28iEFovO59X0/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Скарбонка...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1WXvzsV7BKNsqT6oYpJOjlyNIWrHkwZMj/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Мемориальный...</a>
+</p>
+<p>г.Орша, Детский сад №3
+<a href="https://docs.google.com/document/d/1_nxpRh7Z98yKrUbzuGFCs3BcW29HXTWe/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Каталог...</a>
+</p>
+</div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="poly3">
+        <label class="accordion-title" for="poly3">Поставский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Поставы Детский сад №2
+<a href="https://docs.google.com/document/d/1YDQYvW5LjEyDa6RecbBY_tmPhgUmQPRf/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Сценарий...</a>
+</p>
+            <p>г.Поставы Детский сад №3
+<a href="https://docs.google.com/presentation/d/1TJAyz6ntETyWKWlbJJ6VZBOSkBQs_j5h/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Проект "Улицы"(презентация)</a>
+<br/>
+<a href="https://docs.google.com/document/d/1COFAxpxHPttCisEP-5xGsxG-QNKlq51a/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Проект "Улицы"(docx)</a>
+</p>
+     
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="poly4">
+        <label class="accordion-title" for="poly4">Толочинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Кохановский детский сад №1
+<a href="https://docs.google.com/document/d/1XeRC68lW-D74ckcmQ0BvuEr691sebOhw/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">День Победы...</a>
+</p>
+<p>г.Толочин детский сад №3
+<a href="https://docs.google.com/document/d/1fWkZ3MI1b2w0G7c-3VjX-OWh8q2cEPrV/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Конспект...</a>
+</p>
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="poly5">
+        <label class="accordion-title" for="poly5">Верхнедвинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Верхнедвинск детский сад №4
+<a href="https://docs.google.com/document/d/1vIiNHofldgSqxD3qhVssJ2HW61CL17uI/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Методические...</a>
+</p>
+            
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="poly6">
+        <label class="accordion-title" for="poly6">Городокский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г.Городок Детский сад №2
+<a href="https://docs.google.com/document/d/1teWQp-IUk_SonJCXi0JpTzHibv3tUhhh/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Патриотическое воспитание...</a>
+<br/>
+<a href="https://docs.google.com/document/d/1HdkgGv6yh_9lc962kF64aSjj3W45igLG/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивный плакат...</a>
+</p>
+           <p>г.Городок Детский сад №3
+<a href="https://docs.google.com/document/d/1txG48F2ygXYdMeNJw1FzLUlk8J5sgF77/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Мини музей...</a>
+</p>
+            
+        </div>
+    </div>
+ <div class="accordion-item">
+        <input type="checkbox" id="poly7">
+        <label class="accordion-title" for="poly7">Миорский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>Миорский район детский сад №2
+<a href="https://docs.google.com/document/d/1jTCFixur1sVe-jE0jPfq9PSXDORBdiZB/edit?usp=drive_link&ouid=102719471219926373429&rtpof=true&sd=true">Интерактивные игры...</a>
+</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <input type="checkbox" id="poly8">
+        <label class="accordion-title" for="poly8">г. Новополоцк<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+            <p>г. Новополоцк детский сад №5
+<a href="https://docs.google.com/document/d/1sgnZOvKWJbWoiSDA2o913W0xqmO9hxja/edit?usp=sharing&ouid=102719471219926373429&rtpof=true&sd=true">Конспект...</a>
+</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <input type="checkbox" id="poly9">
+        <label class="accordion-title" for="poly9">Шумилинский район<span class="arrow">&#9660;</span></label>
+        <div class="accordion-content">
+           <p>Обольский детский сад Шумилинского района
+<a href="https://docs.google.com/document/d/16yOm5Z7RYSQz_Nf6lld1Zw8KFlJO8NeE/edit?usp=sharing&ouid=102719471219926373429&rtpof=true&sd=true">Мастер класс...</a>
+        </div>
+    </div>
+</div>
+    </div>
+  </body>
+</html>
